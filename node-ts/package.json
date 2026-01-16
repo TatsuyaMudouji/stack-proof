@@ -1,0 +1,10 @@
+{
+  "name": "estimate-node-ts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npx -y typescript tsc",
+    "start": "npm run build && node dist/cli.js 10 1000",
+    "test": "npm run build && node dist/estimate.test.js"
+  }
+}
